@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- <suite name="Suite" parallel = "tests" thread-count="2"> -->
+<!-- <suite name="Suite" parallel = "methods" thread-count="2"> parallel 
+	= "classes" 
+	<listeners>
+    <listener class-name="com.wsccui.template.BaseListenerWsccui" />
+ </listeners>-->
+
+	<suite name="WSCCUI QA - WE." parallel = "tests" thread-count="1" data-provider-thread-count="1">
+
+	
+	<test name="Create Order">
+		<classes>
+			<class name="com.wsccui.test.CreateOrderTest">
+			</class>
+		</classes>
+	</test>
+	
+		<test name="Return/Refund">
+		<classes>
+			<class name="com.wsccui.test.ReturnsRefundsReplacementTest">
+			</class>
+		</classes>
+	</test>
+	
+		<test name="Search order">
+		<classes>
+			<class name="com.wsccui.test.SearchOrderTest">
+			</class>
+		</classes>
+	</test>
+	
+		<test name="Alert Mgmt">
+		<classes>
+			<class name="com.wsccui.test.CreateAlertTest">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Appeasments">
+		<classes>
+			<class name="com.wsccui.test.CreateAppeasementsTest">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Balance Inquiry">
+		<classes>
+			<class name="com.wsccui.test.BalanceInquiryTest">
+			</class>
+		</classes>
+	</test>
+	
+</suite>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- <suite name="Suite" parallel = "tests" thread-count="2"> -->
+<!-- <suite name="Suite" parallel = "methods" thread-count="2"> parallel 
+	= "classes" -->
+
+<suite name="QA WSCCUI - XUnit tests - BaseUtil" parallel = "tests" thread-count="20" data-provider-thread-count="20">
+	
+	<test name="monthYearParsExpire()">
+		<classes>
+			<class name="com.wsccui.xunit.XunitBaseUtilsTest">
+			<methods>
+          <include name="monthYearParsExpire_Test01" />
+           </methods>
+			</class>
+		</classes>
+	</test>
+	
+		<test name="getRespondeCode()">
+		<classes>
+			<class name="com.wsccui.xunit.XunitBaseUtilsTest">
+			<methods>
+          <include name="getRespondeCode_Test02" />
+           </methods>
+			</class>
+		</classes>
+	</test>
+	
+			<test name="isTotalAmountCorrect()">
+		<classes>
+			<class name="com.wsccui.xunit.XunitBaseUtilsTest">
+			<methods>
+          <include name="isTotalAmountCorrect_Test03" />
+           </methods>
+			</class>
+		</classes>
+	</test>
+</suite>

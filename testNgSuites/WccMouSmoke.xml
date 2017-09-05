@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- <suite name="Suite" parallel = "tests" thread-count="2"> -->
+<!-- <suite name="Suite" parallel = "methods" thread-count="2"> parallel 
+	= "classes" 
+	<listeners>
+    <listener class-name="com.wsccui.template.BaseListenerWsccui" />
+ </listeners>-->
+
+<suite name="WSCCUI MOU. Smoke TC's." parallel = "tests" thread-count="1" data-provider-thread-count="1">
+
+	
+	<test name="Balance Inquiry">
+		<classes>
+			<class name="qac.wsccui.smoke.SmokeTest">
+			</class>
+		</classes>
+	</test>
+</suite>
